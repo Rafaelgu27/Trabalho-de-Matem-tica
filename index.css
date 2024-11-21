@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .shape-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin: 20px 0;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    margin-left: 20px; /* Move o contêiner da imagem para a esquerda */
+    width: fit-content;
+  }
+  
+  .shape-image {
+    width: 200px;
+    display: block;
+  }
+  
+  .inputs {
+    position: absolute;
+    top: 10%;
+    left: 110%; /* Ajusta a posição dos campos em relação à imagem */
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    margin-left: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    padding: 5px;
+    width: 100px;
+  }
+  
+  button {
+    margin-top: 60px;
+    position: absolute;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 70%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .raio-maior{
+    position: absolute;
+    text-align: justify;
+    left: 250%;
+    top: 0%
+  }
+
+  .raio-menor{
+    position: absolute;
+    text-align: justify;
+    left: 100%;
+    top: 100%
+  }
+
+#raio-cilindro{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 28%;
+    left: 30%;
+}
+
+#altura-cilindro{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 43%;
+    left: 37%;
+}
+
+#altura-cone{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 95%;
+    left: 37%;
+}
+
+#raio-cone{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 112%;
+    left: 30%;
+}
+
+#altura-tronco{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 140%;
+    left: 37%;
+}
+
+#raio-tronco{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 130%;
+    left: 26%;
+}
+
+#Raio-tronco{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 153%;
+    left: 26%;
+}
+
+#raio-esfera{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 185%;
+    left: 26%;
+}

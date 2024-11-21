@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Formas</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Áreas e Volumes</h1>
+    
+    <br>
+    <br>
+    <br>
+
+    <!-- Cilindro -->
+    <div class="shape-container">
+      <div class="image-wrapper">
+        <img src="cilindro.png" alt="Cilindro" class="shape-image">
+        <div class="inputs">
+          <div class="input-group">
+            <label>Altura (h):</label>
+            <input type="number" id="cilindro-altura">
+          </div>
+          <div class="input-group">
+            <label>Raio (r):</label>
+            <input type="number" id="cilindro-raio">
+          </div>
+        </div>
+      </div>
+      <button onclick="calcularCilindro()">Calcular</button>
+      <br>
+      <br>
+      <div class="result" id="resultado-cilindro"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Cone -->
+    <div class="shape-container">
+      <div class="image-wrapper">
+        <img src="cone.png" alt="Cone" class="shape-image">
+        <div class="inputs">
+          <div class="input-group">
+            <label>Altura (h):</label>
+            <input type="number" id="cone-altura">
+          </div>
+          <div class="input-group">
+            <label>Raio (r):</label>
+            <input type="number" id="cone-raio">
+          </div>
+        </div>
+      </div>
+      <button onclick="calcularCone()">Calcular</button>
+      <br>
+      <br>
+      <div class="result" id="resultado-cone"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Tronco do cone -->
+    <div class="shape-container">
+      <div class="image-wrapper">
+        <img src="tronco.png" alt="Tronco do cone" class="shape-image">
+        <div class="inputs">
+          <div class="input-group">
+            <label>Altura (h):</label>
+            <input type="number" id="tronco-altura">
+          </div>
+          <div class="raio-menor">
+            <label>Raio menor (r):</label>
+            <input type="number" id="tronco-raio-menor">
+          </div>
+          <div class="raio-maior">
+            <label>Raio maior (R):</label>
+            <input type="number" id="tronco-raio-maior">
+          </div>
+        </div>
+      </div>
+      <button onclick="calcularTronco()">Calcular</button>
+      <br>
+      <br>
+      <div class="result" id="resultado-tronco"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Esfera -->
+    <div class="shape-container">
+      <div class="image-wrapper">
+        <img src="esfera.png" alt="Esfera" class="shape-image">
+        <div class="inputs">
+          <div class="input-group">
+            <label>Raio (r):</label>
+            <input type="number" id="esfera-raio">
+          </div>
+        </div>
+      </div>
+      <button onclick="calcularEsfera()">Calcular</button>
+      <br>
+      <br>
+      <div class="result" id="resultado-esfera"></div>
+    </div>
+  </div>
+
+  <div id="raio-cilindro"></div>
+  <div id="altura-cilindro"></div>
+
+  <div id="altura-cone"></div>
+  <div id="raio-cone"></div>
+
+  <div id="altura-tronco"></div>
+  <div id="raio-tronco"></div>
+  <div id="Raio-tronco"></div>
+
+  <div id="raio-esfera"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
